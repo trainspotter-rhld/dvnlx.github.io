@@ -1,26 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
   body {
     @apply h-screen bg-zinc-300 dark:bg-zinc-800 dark:text-white;
   }
-  
   main {
     @apply w-screen h-[80vh] overflow-y-scroll;
   }
   body::-webkit-scrollbar {
     @apply w-4
   }
-  
+
   body::-webkit-scrollbar-track {
     @apply bg-zinc-50 dark:bg-zinc-900;
   }
-  
+
   body::-webkit-scrollbar-thumb {
     @apply m-1 rounded-full bg-primaryBlue-primary;
   }
-  
+
   button {
     @apply dark:bg-zinc-700 bg-primaryBlue-primary text-white font-albertsans hover:bg-primaryBlue-50 dark:hover:bg-zinc-600 m-1 rounded-md
   }
