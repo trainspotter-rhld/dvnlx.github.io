@@ -513,16 +513,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.box-border {
+  box-sizing: border-box;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -533,12 +533,28 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .rounded-md {
@@ -702,30 +718,14 @@ button:hover {
 }
 
 @media (min-width: 640px) {
-  .sm\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 768px) {
-  .md\:w-4 {
-    width: 1rem;
-  }
-
-  .md\:w-24 {
-    width: 6rem;
-  }
-
   .md\:w-80 {
     width: 20rem;
-  }
-
-  .md\:max-w-7xl {
-    max-width: 80rem;
   }
 
   .md\:grid-cols-4 {
@@ -736,9 +736,5 @@ button:hover {
 @media (min-width: 1024px) {
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
